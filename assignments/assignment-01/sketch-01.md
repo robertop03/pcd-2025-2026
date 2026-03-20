@@ -9,19 +9,19 @@ This sketch (`pcd.sketch01`) shows an example of a board, with a number of small
 ### About the Main Loop
 
 At each cycle, the main loop:
-- checks if it is time to kick the player ball
-- computes the next board state, depending on how much time is elapsed
-- updates the view model with the updated board state
-- renders a new frame, updating synchronously the view with the updated view model
+- Checks if it is time to kick the player ball
+- Computes the next board state, depending on how much time is elapsed
+- Updates the view model with the updated board state
+- Renders a new frame, updating synchronously the view with the updated view model
 
 The board state involves a sequence of steps:
-- updating the state of the player ball and of each small balls
+- Updating the state of the player ball and of each small balls
   - the velocity is updated by applying the friction factor
   - the position is updated given the velocity and the elapsed time
   - collision with boundaries is checked
-- then, collisions among small balls are checked
+- Then, collisions among small balls are checked
   - the check is done by a nested loop, checking each body with all other bodies (but only once)
-- then, collision between the player ball and small balls is checked
+- Finally, collision between the player ball and small balls is checked
 
 ### About Physics
 
