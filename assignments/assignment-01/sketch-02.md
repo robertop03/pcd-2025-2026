@@ -2,7 +2,7 @@ PCD a.y. 2024-2025 - ISI LM UNIBO - Cesena Campus
 
 # Sketch 02 - Notes
 
-v1.0.0-20260316
+v1.0.0-20260320
 
 This sketch shows an example of how to manage **asynchronous inputs** from the keyboard in a concurrent program with a GUI, applying the **MVC** architectural pattern.
 - the Model (package `pcd.ass01.sketch02.model`) includes:
